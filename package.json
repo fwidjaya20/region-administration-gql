@@ -4,7 +4,8 @@
   "description": "Regional Administration of Indonesia",
   "main": "src/server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/server.ts --exec ts-node ./src/server.ts"
   },
   "repository": {
     "type": "git",
@@ -36,7 +37,7 @@
     "axios": "^0.19.2",
     "class-validator": "^0.12.2",
     "dotenv": "^8.2.0",
-    "graphql": "^14.7.0",
+    "graphql": "^15.3.0",
     "reflect-metadata": "^0.1.13",
     "type-graphql": "^1.0.0-rc.3"
   }
