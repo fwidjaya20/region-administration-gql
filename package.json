@@ -1,0 +1,43 @@
+{
+  "name": "regional-administration-gql",
+  "version": "1.0.0",
+  "description": "Regional Administration of Indonesia",
+  "main": "src/server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fwidjaya20/region-administration-gql.git"
+  },
+  "keywords": [
+    "GraphQL",
+    "GQL",
+    "Apollo",
+    "Regional",
+    "Administration",
+    "Indonesia"
+  ],
+  "author": "Fredrick Widjaya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fwidjaya20/region-administration-gql/issues"
+  },
+  "homepage": "https://github.com/fwidjaya20/region-administration-gql#readme",
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/graphql": "^14.5.0",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "apollo-server": "^2.15.1",
+    "axios": "^0.19.2",
+    "class-validator": "^0.12.2",
+    "dotenv": "^8.2.0",
+    "graphql": "^14.7.0",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.0.0-rc.3"
+  }
+}

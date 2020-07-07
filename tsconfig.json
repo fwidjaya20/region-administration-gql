@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "ES2018",
+      "ESNext.AsyncIterable"
+    ],
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "dist",
+    "rootDir": "src",
+    "sourceMap": true,
+    "target": "ES2018",
+    "types": [
+      "reflect-metadata"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
