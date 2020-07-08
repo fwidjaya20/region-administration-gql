@@ -6,9 +6,11 @@ import ProvinceResolver from "./resolvers/province/province.resolver";
 import RegencyResolver from "./resolvers/regency/regency.resolver";
 import DistrictResolver from "./resolvers/district/district.resolver";
 import VillageResolver from "./resolvers/village/village.resolver";
+import container from "./container";
 
 const createSchema = async (): Promise<GraphQLSchema> => {
     const { typeDefs, resolvers } = await buildTypeDefsAndResolvers({
+        container: container,
         resolvers: [
             ProvinceResolver,
             RegencyResolver,
@@ -23,7 +25,7 @@ const createSchema = async (): Promise<GraphQLSchema> => {
 
 const createServer = async (schema: GraphQLSchema): Promise<ApolloServer> => {
     return new ApolloServer({
-        schema,
+        schema: schema,
         cors: true,
         tracing: true,
         debug: process.env.GQL_ENV != "production",

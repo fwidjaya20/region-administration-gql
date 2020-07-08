@@ -1,11 +1,13 @@
 import Axios, { AxiosInstance, Method, AxiosRequestConfig, AxiosResponse } from "axios";
+import {injectable} from "inversify";
 
+@injectable()
 class HttpClient {
     private readonly baseUrl: string;
     private instance: AxiosInstance;
 
     constructor() {
-        this.baseUrl = '';
+        this.baseUrl = 'http://localhost:8001';
         this.instance = Axios.create();
     }
 
